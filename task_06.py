@@ -7,8 +7,8 @@ def rps_game_winner(players):
     if not ((pl1 and pl2) in rps):
         raise Exception('NoSuchStrategyError')
     if (pl1=='P' and pl2=='R')or(pl1=="S" and pl2=="P")or(pl1=="R" and pl2=="S"):
-        print(f"Победил {players[0][0]}")
+        return (f"Победил {players[0][0]}")
     elif pl1==pl2:
-        print(f"Давай по новой)")
+        return (f"Давай по новой)")
     else:
-        print(f"Победил {players[1][0]}")
+        return (f"Победил {players[1][0]}")

@@ -5,10 +5,10 @@ def max_odd(array):
             max = int(i)
     if not max:
         max=None
-    print(max)
+    return max
 
-max_odd([1, 2, 3, 4, 4]) # => 3
-max_odd([21.0, 2, 3, 4, 4]) # => 21
-max_odd(['ololo', 2, 3, 4, [1, 2], None]) # => 3
-max_odd(['ololo', 'fufufu']) # => None
-max_odd([2, 2, 4])
+print(max_odd([1, 2, 3, 4, 4]))
+print(max_odd([21.0, 2, 3, 4, 4]))
+print(max_odd(['ololo', 2, 3, 4, [1, 2], None]))
+print(max_odd(['ololo', 'fufufu']))
+print(max_odd([2, 2, 4]))

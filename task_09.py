@@ -13,8 +13,9 @@ def connect_dicts(dict1, dict2):
         else: connected.update({key:value})
 
  sorted_dict=sorted(connected.items(),key=operator.itemgetter(1))
- print(dict(sorted_dict))
-connect_dicts({ "a": 2, "b": 12 }, { "c": 11, "e": 5 }) # =>
-connect_dicts({ "a": 13, "b": 9, "d": 11 }, { "c": 12, "a": 15 }) # =>
-connect_dicts({ "a": 14, "b": 12 }, { "c": 11, "a": 15 })
+ return dict(sorted_dict)
+
+print(connect_dicts({ "a": 2, "b": 12 }, { "c": 11, "e": 5 })) # =>
+print(connect_dicts({ "a": 13, "b": 9, "d": 11 }, { "c": 12, "a": 15 })) # =>
+print(connect_dicts({ "a": 14, "b": 12 }, { "c": 11, "a": 15 }))
 print(operator.itemgetter(1))

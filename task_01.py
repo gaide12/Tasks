@@ -4,11 +4,11 @@ def is_palindrome(string):
     for p in punct:
         if p in string:
             string=string.replace(p,"")
-    print(string==string[::-1])
-is_palindrome("A man, a plan, a canal -- Panama") # => True
-is_palindrome("Madam, I'm Adam!") # => True
-is_palindrome(333) # => True
-is_palindrome(None) # => False
-is_palindrome("Abracadabra") # => False )
+    return string==string[::-1]
+print(is_palindrome('A man, a plan, a canal -- Panama,'))
+print(is_palindrome("Madam, I'm Adam!"))
+print(is_palindrome(333,))
+print(is_palindrome(None,))
+print(is_palindrome("Abracadabra",))
 
 

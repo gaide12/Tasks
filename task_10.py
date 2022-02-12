@@ -10,6 +10,6 @@ def count_words(sentence):
             counter=count_dict.get(i,0)+1
             count_dict[i]=counter
         else : count_dict[i]=1
-    print(count_dict)
-count_words("A man, a plan, a canal -- Panama") # => {"a": 3, "man": 1,"canal": 1, "panama": 1, "plan": 1}
-count_words("Doo bee doo bee doo") # => {"doo": 3, "bee": 2}
+    return count_dict
+print(count_words("A man, a plan, a canal -- Panama")) # => {"a": 3, "man": 1,"canal": 1, "panama": 1, "plan": 1}
+print(count_words("Doo bee doo bee doo")) # => {"doo": 3, "bee": 2}
