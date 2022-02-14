@@ -39,4 +39,5 @@ class Dessert:
 
     def is_delicious(self):
         return True
-jelly=Dessert("Apple_Bean",'10')
+jelly=Dessert("Apple_Bean",201)
+print(jelly.is_healthy())

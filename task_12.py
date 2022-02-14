@@ -22,7 +22,7 @@ class Dessert:
 
     @name.setter
     def name(self, name='def'):
-        if self.name_invalid(name):
+        if not self.name_invalid(name):
             self._name = name
 
     @property
@@ -31,7 +31,7 @@ class Dessert:
 
     @calories.setter
     def calories(self, calories):
-        if self.calories_invalid(calories):
+        if not self.calories_invalid(calories):
             self._calories = calories
 
     def is_healthy(self):
@@ -65,6 +65,6 @@ class  JellyBean(Dessert):
         else:
             return True
 
-jelly=JellyBean("Apple_Bean",10,"black licorice")
-jelly.flavor="bebra"
-print(jelly.flavor)
+jelly=JellyBean()
+jelly.name='123'
+print(jelly.name)

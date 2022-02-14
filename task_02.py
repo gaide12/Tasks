@@ -4,7 +4,7 @@ def coincidence(list=None,range=None):
         return (outlist)
     else:
         for i in list:
-            if isinstance(i,int|float):
+            if isinstance(i,(int,float)):
                 if int(i) in range:
                     outlist.append(i)
         return (outlist)
