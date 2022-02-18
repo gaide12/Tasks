@@ -1,8 +1,4 @@
 class Dessert:
-    @classmethod
-    def calories_invalid(cls,calories):
-        if not isinstance(calories, int):
-            raise TypeError('"calories" должен быть int')
 
     def __init__(self, name='def', calories=0):
         self._name = name
@@ -25,8 +21,10 @@ class Dessert:
             self._calories = calories
 
     def is_healthy(self):
-        if not self.calories_invalid(self.calories):
-            return self.calories < 200
+        if isinstance(self._calories,(int,float)) and self._calories<200:
+            return True
+        else:
+            return False
 
     def is_delicious(self):
         return True
